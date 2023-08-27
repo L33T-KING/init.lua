@@ -16,6 +16,8 @@ return require('packer').startup(function(use)
   use 'preservim/nerdtree'
   --install nvim-tree
   --use 'nvim-tree/nvim-tree.lua'
+  --install floaterm
+  use 'voldikss/vim-floaterm'
 	use "nvim-lua/plenary.nvim"
 	use "ThePrimeagen/harpoon"
 --use "hrsh7th/cmp-nvim-lsp"
