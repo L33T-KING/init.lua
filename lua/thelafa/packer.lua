@@ -12,6 +12,10 @@ return require('packer').startup(function(use)
 			ts_update()
 		end,}
 	use 'nvim-treesitter/playground'
+  --install nerdtree
+  use 'preservim/nerdtree'
+  --install nvim-tree
+  --use 'nvim-tree/nvim-tree.lua'
 	use "nvim-lua/plenary.nvim"
 	use "ThePrimeagen/harpoon"
 --use "hrsh7th/cmp-nvim-lsp"
