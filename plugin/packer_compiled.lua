@@ -74,19 +74,40 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["arshamiser.nvim"] = {
+    config = { "\27LJ\2\nÄ\2\0\0\4\0\16\0\0256\0\0\0009\0\1\0009\0\2\0'\2\3\0B\0\2\0016\0\4\0'\2\5\0B\0\2\0016\0\6\0006\1\4\0'\3\b\0B\1\2\0029\1\t\1=\1\a\0006\0\0\0009\0\n\0'\1\v\0=\1\t\0006\0\0\0009\0\f\0009\0\r\0'\2\14\0'\3\15\0B\0\3\1K\0\1\0004%{%v:lua.require(\"arshamiser.tabline\").draw()%}\ftabline\20nvim_set_option\bapi\28v:lua.custom_foldtext()\bopt\rfoldtext\23arshamiser.folding\20custom_foldtext\a_G\25arshamiser.feliniser\frequire\21arshamiser_light\16colorscheme\bcmd\bvim\0" },
+    loaded = true,
+    path = "/Users/lafa/.local/share/nvim/site/pack/packer/start/arshamiser.nvim",
+    url = "https://github.com/arsham/arshamiser.nvim"
+  },
+  ["arshlib.nvim"] = {
+    loaded = true,
+    path = "/Users/lafa/.local/share/nvim/site/pack/packer/start/arshlib.nvim",
+    url = "https://github.com/arsham/arshlib.nvim"
+  },
   ["copilot.lua"] = {
     commands = { "Copilot" },
-    config = { "\27LJ\2\ni\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\15suggestion\1\0\0\1\0\2\fenabled\2\17auto_trigger\2\nsetup\fcopilot\frequire\0" },
+    config = { "\27LJ\2\ni\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\15suggestion\1\0\0\1\0\2\17auto_trigger\2\fenabled\2\nsetup\fcopilot\frequire\0" },
     loaded = false,
     needs_bufread = false,
     only_cond = false,
     path = "/Users/lafa/.local/share/nvim/site/pack/packer/opt/copilot.lua",
     url = "https://github.com/zbirenbaum/copilot.lua"
   },
+  ["feline.nvim"] = {
+    loaded = true,
+    path = "/Users/lafa/.local/share/nvim/site/pack/packer/start/feline.nvim",
+    url = "https://github.com/famiu/feline.nvim"
+  },
   harpoon = {
     loaded = true,
     path = "/Users/lafa/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/ThePrimeagen/harpoon"
+  },
+  ["heirline.nvim"] = {
+    loaded = true,
+    path = "/Users/lafa/.local/share/nvim/site/pack/packer/start/heirline.nvim",
+    url = "https://github.com/rebelot/heirline.nvim"
   },
   nerdtree = {
     loaded = true,
@@ -97,6 +118,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/lafa/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
+  ["nvim-web-devicons"] = {
+    loaded = true,
+    path = "/Users/lafa/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -118,6 +144,11 @@ _G.packer_plugins = {
     path = "/Users/lafa/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["vim-devicons"] = {
+    loaded = true,
+    path = "/Users/lafa/.local/share/nvim/site/pack/packer/start/vim-devicons",
+    url = "https://github.com/ryanoasis/vim-devicons"
+  },
   ["vim-floaterm"] = {
     loaded = true,
     path = "/Users/lafa/.local/share/nvim/site/pack/packer/start/vim-floaterm",
@@ -126,6 +157,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: arshamiser.nvim
+time([[Config for arshamiser.nvim]], true)
+try_loadstring("\27LJ\2\nÄ\2\0\0\4\0\16\0\0256\0\0\0009\0\1\0009\0\2\0'\2\3\0B\0\2\0016\0\4\0'\2\5\0B\0\2\0016\0\6\0006\1\4\0'\3\b\0B\1\2\0029\1\t\1=\1\a\0006\0\0\0009\0\n\0'\1\v\0=\1\t\0006\0\0\0009\0\f\0009\0\r\0'\2\14\0'\3\15\0B\0\3\1K\0\1\0004%{%v:lua.require(\"arshamiser.tabline\").draw()%}\ftabline\20nvim_set_option\bapi\28v:lua.custom_foldtext()\bopt\rfoldtext\23arshamiser.folding\20custom_foldtext\a_G\25arshamiser.feliniser\frequire\21arshamiser_light\16colorscheme\bcmd\bvim\0", "config", "arshamiser.nvim")
+time([[Config for arshamiser.nvim]], false)
 
 -- Command lazy-loads
 time([[Defining lazy-load commands]], true)

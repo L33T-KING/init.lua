@@ -10,8 +10,10 @@ vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.breakindent = true
 vim.opt.titlestring = "%<%F%=%l/%L - nvim" -- what the titlebar shows
+vim.opt.encoding = "utf-8" -- the encoding written to a file
 --end added from craftzdog/dotfiles
 
+vim.opt.termguicolors = true
 vim.keymap.set("i", '<Tab>', function()
   if require("copilot.suggestion").is_visible() then
     require("copilot.suggestion").accept()

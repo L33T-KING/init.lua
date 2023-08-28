@@ -21,6 +21,29 @@ return require('packer').startup(function(use)
 	use "nvim-lua/plenary.nvim"
 	use "ThePrimeagen/harpoon"
 --use "hrsh7th/cmp-nvim-lsp"
+  use "ryanoasis/vim-devicons"
+
+  use({
+  "arsham/arshamiser.nvim",
+  requires = {
+    "arsham/arshlib.nvim",
+    "famiu/feline.nvim",
+    "rebelot/heirline.nvim",
+    "kyazdani42/nvim-web-devicons",
+  },
+  config = function()
+    -- ignore any parts you don't want to use
+    vim.cmd.colorscheme("arshamiser_light")
+    require("arshamiser.feliniser")
+    -- or:
+    -- require("arshamiser.heirliniser")
+
+    _G.custom_foldtext = require("arshamiser.folding").foldtext
+    vim.opt.foldtext = "v:lua.custom_foldtext()"
+    -- if you want to draw a tabline:
+    vim.api.nvim_set_option("tabline", [[%{%v:lua.require("arshamiser.tabline").draw()%}]])
+  end,
+})
 
 	use {
 		'nvim-telescope/telescope.nvim', tag = '0.1.2',
