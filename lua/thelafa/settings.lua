@@ -14,6 +14,8 @@ vim.opt.encoding = "utf-8" -- the encoding written to a file
 --end added from craftzdog/dotfiles
 
 vim.opt.termguicolors = true
+vim.cmd(":colorscheme arshamiser_dark")
+
 vim.keymap.set("i", '<Tab>', function()
   if require("copilot.suggestion").is_visible() then
     require("copilot.suggestion").accept()
@@ -23,4 +25,3 @@ vim.keymap.set("i", '<Tab>', function()
 end, {
   silent = true,
 })
-
